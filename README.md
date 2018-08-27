@@ -31,12 +31,22 @@ After some time the program should comeplete and you will now have a fully const
 
 ### Running the Search Engine: Command Line
 
-to be written...
+This search engine is capable of querying one to x amount of words. For the best results search for words that are related, otherwise the results may be slightly skewed. I'll get into the actual way that the engine searches for results but first I'll show you how to run the actual program. All you do is type the following command:
+
+```
+python query.py FIRST_QUERY SECOND_QUERY ETC_QUERY
+```
+
+When typing queries make sure that they are spelled correctly and that they are separated by space. Once you hit enter after typing in this command, a list of up to 10 results will be displayed. When searching with a single query, this list is the top 10 links containing the query you searched for. When searching with multiple queries, the results will prioritize sites containing both words, then revert to highest singular queries. Say that there are only 6 sites containing both "compueter" and "science", the 7th link and onwards would then be links to pages with the highest singular occurance of "computer" or "science". That's pretty much all you need to know to run the search engine via command line!
 
 
 ### Running the Search Engine: GUI
 
-to be written...
+It is very simple to run the search engine via GUI. The command below will actually get the GUI up and running. Once the GUI is running, simply type in your query and press search. The results will be displayed in priority of tf-idf score. The top 10 results of a query will be displayed and you can go to any of the webpages by clicking the links. If your query pulled less than 10 results, then only that amount will be shown in the results. The prioritaztion of the top 10 search results for multiple word queries is exactly the same as when you run from the command line. That's pretty much all you'll need to know to run the search engine via GUI.
+
+```
+python GUI.py
+```
 
 
 ### Authors
@@ -49,6 +59,6 @@ to be written...
 ### Acknowledgements
 
 * Big thank you to Prajal Trivedi for helping our group towards the pathway of success.
-* Big thank you to Sergio Gago-Masague for teaching such a great class.
-* Big thank you to Chick-fil-A for allowing us to hold our group meetings in restaurant.
+* Big thank you to Professor Sergio Gago-Masague for teaching such a great class.
+* Big thank you to Chick-fil-A for allowing us to hold our group meetings in their restaurant.
 
