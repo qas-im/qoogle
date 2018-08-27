@@ -65,7 +65,7 @@ if __name__ == "__main__":									# if file is not being imported
 					doc_data[doc][1] += tfidf
 					#tfidf_data[doc] += tfidf	# add on top of previous tfidf_data
 		
-		print("Top 10 Results For \""+" ".join(query_list)+"\" In Index")
+		print("Top 10 Results for \""+" ".join(query_list)+"\" in Index")
 		entries = 1
 		for k,v in sorted(doc_data.items(), key=lambda x: (-x[1][0],-x[1][1]))[:10]:
 			print("{:2}: {}".format(entries,book_data[k]))
